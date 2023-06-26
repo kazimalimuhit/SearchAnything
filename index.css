@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  height: auto;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.head {
+  font-family: "Arial", sans-serif;
+  font-size: 3vmax;
+  position: absolute;
+  top: 2%;
+}
+
+.upper-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  gap: 20px;
+  width: 40vw;
+  margin-bottom: 4%;
+}
+.input {
+  height: 5vh;
+  width: 30vmax;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+.input:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: blue; /* Changes the border color when focused */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Adds a box shadow when focused */
+}
+.input:hover {
+  border-color: green; /* Changes the border color when hovered */
+}
+.btn {
+  height: 6vh;
+  width: 10vmax;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1vw;
+}
+.image {
+  border: 1px solid black;
+  width: 40vmax;
+  height: 40vmax;
+  border-radius: 10px;
+}
+.p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  height: auto;
+  width: 40vmax;
+}
+
+.icons {
+  font-size: 4.5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-bottom: 3%;
+}
+
+.red-icon {
+  color: red;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 10%;
+    height: 70vmax;
+    width: 20vw;
+  }
+  .btn {
+  }
+}
