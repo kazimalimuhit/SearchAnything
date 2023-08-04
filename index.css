@@ -5,10 +5,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 1%;
-  height: auto;
-  width: 50vw;
+  min-height: 70vh;
+  width: 60vw;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2%;
 }
 .head {
   font-family: "Arial", sans-serif;
@@ -29,6 +30,8 @@
 .input {
   height: 5vh;
   width: 30vmax;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5vw;
   border: none;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
@@ -44,7 +47,7 @@
   height: 6vh;
   width: 10vmax;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1vw;
+  font-size: 1.6vw;
 }
 .image {
   border: 1px solid black;
@@ -73,10 +76,43 @@
 }
 @media only screen and (max-width: 600px) {
   .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 10%;
-    height: 70vmax;
-    width: 20vw;
+    min-height: 70vh;
+    width: 40vw;
+    margin-bottom: 2%;
   }
-  .btn {
+  .head {
+    font-family: "Arial", sans-serif;
+    font-size: 3vmax;
+    position: absolute;
+    top: 2%;
+  }
+  .upper-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    gap: 20px;
+    width: 40vw;
+    margin-bottom: 5%;
+  }
+  .image {
+    border: 1px solid black;
+    width: 40vmax;
+    height: 35vmax;
+    border-radius: 10px;
+  }
+  .icons {
+    font-size: 4.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-bottom: 5%;
   }
 }
