@@ -42,7 +42,8 @@ btn.addEventListener("click", () => {
         existingP.remove();
       }
       let p = document.createElement("p");
-      p.textContent = res.results[randomItem].description;
+      p.textContent = res.results[randomItem].alt_description;
+      console.log(res.results[randomItem].description);
       p.classList.add("p");
       ptag.appendChild(p);
     });
